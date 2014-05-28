@@ -12,7 +12,7 @@
 	
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
 		
-    {% if PELICAN_SIMPLEGREY_STICKY_SIDEBAR %}
+    {% if PELICAN_SOBER_STICKY_SIDEBAR %}
 	  <script type="text/javascript" src="{{ SITEURL }}/theme/js/custom_scripts.js"></script>
 	{% endif %}
 
@@ -58,13 +58,13 @@
 		  </div>	
 		  
 		  <div class="sidebar">
-		    <div class="sidebar-container" {% if PELICAN_SIMPLEGREY_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
+		    <div class="sidebar-container" {% if PELICAN_SOBER_STICKY_SIDEBAR %}id="sidebar-container-fixed"{% endif %}>
 
-	          {% if PELICAN_SIMPLEGREY_ABOUT %}
+	          {% if PELICAN_SOBER_ABOUT %}
 	            <aside>
 	              <h2>About</h2>
 			      <p>
-                    {{ PELICAN_SIMPLEGREY_ABOUT }}
+                    {{ PELICAN_SOBER_ABOUT }}
 			      </p>
 			    </aside>
 			  {% endif %}
@@ -106,7 +106,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+		  {{ AUTHOR }} - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
     	</p>
 
 	  </footer>	
