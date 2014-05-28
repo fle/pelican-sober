@@ -1,33 +1,35 @@
 # sober #
 
+Pelican-sober is a very light theme focused on readability :
+
+* Integration of [TinyTypo](http://tinytypo.tetue.net)
+* Utilisation of the font Source Sans Pro
+* Option to fade out sidebar to focus on article reading
+
+This theme provides also classical features like Google Analytics, Twitter and Disqus integration.
 
 
 ## Screenshot ##
 
 ![screenshot](screenshot.png)
 
-
 ## Sidebar options ##
 
-``PELICAN_SOBER_ABOUT = "My name is Brian" `` option allows you to add a short *About* block in sidebar
-
-``PELICAN_SOBER_STICKY_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll and fading out) to facilitate  readability
+* ``PELICAN_SOBER_ABOUT = "My name is Brian" `` option allows you to add a short *About* block in sidebar
+* ``PELICAN_SOBER_STICKY_SIDEBAR = True | False `` option allows you to set the sidebar fixed (following scroll and fading out)
 
 ![screenshot2](screenshot2.png)
 
 
 ## Twitter cards ##
 
-``PELICAN_SOBER_TWITTER_CARD_CREATOR = '__fle__' `` option allows you add [Twitter summary card metadata](https://dev.twitter.com/docs/cards/types/summary-card) in your posts (meta creator)
+[Twitter card metadata](https://dev.twitter.com/docs/cards/types/summary-card) are useful to provides a better overview of your post
+when a tweet point to it.
 
-``PELICAN_SOBER_TWITTER_CARD_SITE = '__fle__' `` option allows you add [Twitter summary card metadata](https://dev.twitter.com/docs/cards/types/summary-card) in your posts (meta creator)
+If you provide one of the two settings below, twitter card metadata will be automatically added for each post.
 
-
-## Other integrated options ##
-
-``GOOGLE_ANALYTICS `` integration
-
-``TWITTER `` integration
+* ``PELICAN_SOBER_TWITTER_CARD_CREATOR = '__fle__' `` (author twitter account)
+* ``PELICAN_SOBER_TWITTER_CARD_SITE = '__company__' `` (website/company twitter account)
 
 
 ## Credits ##
