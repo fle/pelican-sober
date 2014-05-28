@@ -6,7 +6,7 @@ Pelican-sober is a very light theme focused on readability :
 * Utilisation of the font Source Sans Pro
 * Option to fade out sidebar to focus on article reading
 
-This theme provides also classical features like Google Analytics, Twitter and Disqus integration.
+This theme provides also classical features like Google Analytics, Twitter, Disqus and Pygments integration.
 
 
 ## Screenshot ##
