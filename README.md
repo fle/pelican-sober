@@ -6,7 +6,7 @@ Pelican-sober is a very light theme focused on readability :
 * Utilisation of the font Source Sans Pro
 * Option to fade out sidebar to focus on article reading
 
-This theme provides also classical features like Google Analytics, Twitter, Disqus and Pygments integration.
+This theme provides classical features like Google & Piwik Analytics, Twitter, Disqus and Pygments integration.
 
 
 ## Screenshot ##
@@ -31,8 +31,20 @@ If you provide one of the two settings below, twitter card metadata will be auto
 * ``PELICAN_SOBER_TWITTER_CARD_CREATOR = '__fle__' `` (author twitter account)
 * ``PELICAN_SOBER_TWITTER_CARD_SITE = '__company__' `` (website/company twitter account)
 
+## Google Analytics ##
+
+* ``GOOGLE_ANALYTICS = ‘UA-XXXX-YYYY'``
+
+## Guag.es Analytics ##
+
+* ``GUAGES = '_guages_id_'``
+
+## PIWIK Analytics ##
+
+* ``PIWIK_URL = 'piwik.mysite.com'`` (Base URL of your PIWIK server)
+* ``PIWIK_SSL_URL = 'secure-piwik.mysite.com'`` (ONLY required if different from PIWIK_URL)
+* ``PIWIK_SITE_ID = '3' `` (The site ID assigned to this website)
 
 ## Credits ##
 
 * Icons by [Jorge Calvo](http://dribbble.com/shots/1074961-Flat-Icons-EPS), slightly adapted by [Ingrid Hamard](http://ingrid.hamard.free.fr)
-
