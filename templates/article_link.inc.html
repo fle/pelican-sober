@@ -1,4 +1,3 @@
 <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-  <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+  <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
   {% if article.tags %}<p class="tags">tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}</p>{% endif %}
-</a>
