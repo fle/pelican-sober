@@ -1,0 +1,11 @@
+{% if article %}
+    {% for tag in article.ogtags %}
+        <meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
+    {% endfor %}
+{% endif %}
+
+{% if page  %}
+    {% for tag in page.ogtags %}
+        <meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
+    {% endfor %}
+{% endif %}
