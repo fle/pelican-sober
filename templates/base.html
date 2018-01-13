@@ -38,14 +38,14 @@
 	  <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a>
           {% endif %}
 	    </div>
-	    {% if PAGES %}
-	      <nav class="pages">
-	        {% for p in PAGES %}
-			  <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-			  {% if not loop.last %}-{% endif %}
-			{% endfor %}
-	      </nav>
-	    {% endif %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+            <nav class="pages">
+              {% for p in pages %}
+                <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                {% if not loop.last %}-{% endif %}
+              {% endfor %}
+            </nav>
+            {% endif %}
 		<a href="{{ SITEURL }}" class="title">{{ SITENAME }}</a>
       </header>
 	
