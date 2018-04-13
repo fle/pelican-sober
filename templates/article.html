@@ -39,7 +39,7 @@
 	</p>
     {% endif %}
 
-	{% if DISQUS_SITENAME %}
+	{% if DISQUS_SITENAME and article.status != 'draft' %}
 	<div class="comments">
 	<h2>Comments !</h2>
 	    <div id="disqus_thread"></div>
