@@ -130,6 +130,10 @@ header .pages a {
   transition: opacity 0s ease-in-out 0s;
 }
 
+.sidebar ol,
+.sidebar ul {
+  margin-left: 0;
+}
 
 /* Titles */
 
