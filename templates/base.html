@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ HTML_LANG }}">	
+<html lang="en">	
 <head>
 	<meta charset="utf-8"/>
 	<title>{% block title %}{{ SITENAME }}{%endblock%}</title>	
@@ -29,7 +29,7 @@
 {{ FEED_ATOM }}
     <div class="container">
 	  
-	  <header role="banner">
+	  <header>
 	    <div class="feeds">
 	      {% if FEED_ALL_ATOM %}
 	      <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
