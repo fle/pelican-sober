@@ -260,7 +260,7 @@ ol.archive li .tags
 .social a[href*='delicious.com']:before {content: url('../images/icons/delicious-18px.png'); }
 .social a[href*='digg.com']:before {content: url('../images/icons/digg-18px.png'); }
 .social a[href*='facebook.com']:before {content: url('../images/icons/facebook-18px.png'); }
-.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverfow-18px.png'); }
+.social a[href*='stackoverflow.com']:before {content: url('../images/icons/stackoverflow-18px.png'); }
 .social a[href*='rss.xml']:before {content: url('../images/icons/feed-18px.png'); }
 .social a[href*='atom.xml']:before {content: url('../images/icons/feed-18px.png'); }
 
