@@ -13,6 +13,12 @@ This theme provides classical features like Google & Piwik Analytics, Twitter, D
 
 ![screenshot](screenshot.png)
 
+
+## Homepage options ##
+
+* ``PELICAN_SOBER_HOME_LISTS_ARTICLES = True | False (default False) `` option allows you to either promote the last post on homepage or a paginated list of all articles
+
+
 ## Sidebar options ##
 
 * ``PELICAN_SOBER_ABOUT = "My name is Brian" `` option allows you to add a short *About* block in sidebar

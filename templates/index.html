@@ -3,34 +3,46 @@
 
 {% block content %}
 
-{% for article in articles %}
+{% if not PELICAN_SOBER_HOME_LISTS_ARTICLES %}
 
-    {% if loop.index == 1 %}
+  {% for article in articles %}
 
-      <article>
-        <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-        {{ article.content }}
-      </article>
+      {% if loop.index == 1 %}
 
-      <hr />
+        <article>
+          <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+          {{ article.content }}
+        </article>
 
-      {% if loop.length  > 1 %}
-        <div>
-          <h3>Last posts</h3>
-          <ol class="archive">
+        <hr />
+
+        {% if loop.length  > 1 %}
+          <div>
+            <h3>Last posts</h3>
+            <ol class="archive">
+        {% endif %}
+
+      {% elif loop.index < 7 %}
+        <li>
+          {% include 'article_link.inc.html' %}
+        </li>
       {% endif %}
-    
-    {% elif loop.index < 7 %}
-      <li>
-        {% include 'article_link.inc.html' %}
-      </li>
-    {% endif %}
 
-{% endfor %}
+  {% endfor %}
 
-{% if articles|length > 1 %}
-          </ol>
-        </div>
+  {% if articles|length > 1 %}
+            </ol>
+          </div>
+  {% endif %}
+
+{% else %}
+
+  {% for article in articles_page.object_list %}
+    {% include 'article_summary.inc.html' %}
+  {% endfor %}
+
+  {% include 'pagination.inc.html' %}
+
 {% endif %}
 
 {% endblock content %}
