@@ -127,6 +127,13 @@ header .pages a {
   color: #4D4D4C;
 }
 
+.sidebar .avatar {
+  display: block;
+  margin:0 auto;
+  border-radius: 50%;
+  width: 100px;
+}
+
 /* Titles */
 
 h1 a {
@@ -322,4 +329,3 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
     margin: 0 4%;
   }
 }
-
