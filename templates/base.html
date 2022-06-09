@@ -81,7 +81,7 @@
 	            <h2>Social</h2>
 			      <ul class="social">
 				    {% for name, link in SOCIAL %}
-				    <li><a href="{{ link }}">{{ name }}</a><i></i></li>
+				    <li><a href="{{ link }}" class="social-{{ name.lower() }}">{{ name }}</a><i></i></li>
 				    {% endfor %}
 			      </ul>
 			    </aside>

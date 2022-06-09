@@ -257,6 +257,7 @@ ol.archive li .tags
   margin-right: 3px;
   padding-top: 4px;
 }
+.social a[class='social-mastodon'] + i:before {content: url('../images/icons/mastodon-18px.png'); }
 .social a[href*='twitter.com'] + i:before {content: url('../images/icons/twitter-18px.png'); }
 .social a[href*='linkedin.com'] + i:before {content: url('../images/icons/linkedin-18px.png'); }
 .social a[href*='github.com'] + i:before {content: url('../images/icons/github-18px.png'); }
