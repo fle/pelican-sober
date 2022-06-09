@@ -7,9 +7,9 @@
 	
 	{% if 'pelican-open_graph' in PLUGINS %}
 		{% include 'includes/open_graph.html' %}
-	{% endif %}
-	{% if TWITTER_CARDS %}
-		{% include 'includes/twitter_cards.html' %}
+		{% if TWITTER_CARDS %}
+			{% include 'includes/twitter_cards.html' %}
+		{% endif %}
 	{% endif %}
 
 	{% block extra_meta %}
